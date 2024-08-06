@@ -1,6 +1,7 @@
 # JestTesting
 
 <h5>
- Jest Matchers
+ Jest Matchers: 
+ <a href="https://jestjs.io/docs/expect" target="_blank">Click Here</a>
 </h5>
-<a href="https://jestjs.io/docs/expect" target="_blank">Click Here</a>
+
