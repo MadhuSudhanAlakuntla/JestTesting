@@ -11,17 +11,19 @@ function UserForm({ onUserAdd }) {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
-      <div>
-        <label>Name</label>
-        <input value={name} onChange={(e) => setName(e.target.value)} />
+    <div style={{textAlign:"center"}}>
+    <form onSubmit={handleSubmit} style={{padding:"10px"}}>
+      <div style={{padding:"10px"}}>
+        <label htmlFor='name'>Name: </label>
+        <input id='name' value={name} onChange={(e) => setName(e.target.value)} />
       </div>
-      <div>
-        <label>Email</label>
-        <input value={email} onChange={(e) => setEmail(e.target.value)} />
+      <div style={{padding:"10px"}}>
+        <label htmlFor='email'>Email: </label>
+        <input id='email' value={email} onChange={(e) => setEmail(e.target.value)} />
       </div>
       <button>Add User</button>
     </form>
+    </div>
   );
 }
 

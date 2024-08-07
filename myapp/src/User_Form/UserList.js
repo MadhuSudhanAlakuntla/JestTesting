@@ -1,3 +1,4 @@
+import "./User.css"
 function UserList({ users }) {
   const renderedUsers = users.map((user) => {
     return (
@@ -16,7 +17,7 @@ function UserList({ users }) {
           <th>Email</th>
         </tr>
       </thead>
-      <tbody>{renderedUsers}</tbody>
+      <tbody data-testid = "users">{renderedUsers}</tbody>
     </table>
   );
 }
